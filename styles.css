@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --VeryDarkGray: hsl(0, 0%, 17%);
+    --DarkGray: hsl(0, 0%, 59%);
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
+input{
+    font-size: 18px;
+    font-weight: 400;
+}
+h1{
+    font-weight: 700;
+    margin: 10px 0 20px 0;
+    color: #fff;
+}
+h4{
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+.form-container{
+    background:url('images/pattern-bg.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 70px 0;
+}
+.form-elements{
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+}
+.form-control{
+    padding: 15px;
+    border: none;
+    min-width: 380px;
+    border-radius: 10px;
+}
+.btn{
+    background-color: var(--VeryDarkGray);
+    padding: 15px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn:hover{
+    background-color: var(--DarkGray);
+}
+.display-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    margin: -50px auto 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 999;
+}
+.info-block{
+    border-right: 1px solid;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 50px 0 15px;
+}
+.info-block-last{
+    border-right: none;
+}
+.muted-title{
+    text-transform: uppercase;
+    color: var(--DarkGray);
+    font-weight: 500;
+}
+span.results{
+    color: var(--VeryDarkGray);
+    font-weight: 500;
+}
+.map-container{
+    height: calc(100% -310px);
+    z-index: 0;
+}
