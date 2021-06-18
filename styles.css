@@ -95,7 +95,44 @@ span.results{
     color: var(--VeryDarkGray);
     font-weight: 500;
 }
-.map-container{
-    height: calc(100% -310px);
-    z-index: 0;
+#mapid { 
+    height: 600px;
+    width: 100%;
+    margin-top: -60px;
+}
+
+@media(max-width:600px){
+    h1{
+        font-size: 20px;
+    }
+    .form-elements{
+        max-width: 80%;
+    }
+    .form-control{
+        min-width: 300px;
+    }
+    .display-container{
+        flex-direction: column;
+        width: 80%;
+        padding: 20px;
+    }
+    .info-block{
+        border-right: none;
+        min-height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .info-block h4{
+        font-size: 0.7rem;
+    }
+    .info-block span{
+        font-size: 1rem;
+    }
+    #mapid{
+        margin-top:-220px;
+    }
 }
