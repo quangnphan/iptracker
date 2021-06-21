@@ -98,7 +98,7 @@ span.results{
 #mapid { 
     height: 600px;
     width: 100%;
-    margin-top: -60px;
+    margin-top: -80px;
 }
 
 @media(max-width:600px){
